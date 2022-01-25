@@ -71,7 +71,7 @@ class CameraController extends Controller
     public function edit(camera $camera)
     {
         //
-        return view('camera.edit',compact('camera'));
+        return view('camera.edit', compact('camera'));
     }
 
     /**
@@ -84,10 +84,10 @@ class CameraController extends Controller
     public function update(Request $request, camera $camera)
     {
         //fungsi update
-        $request-> validate([
+        $request -> validate([
             'jenis'  => 'required',
-            'merk'  => 'required',
-            'tipe'  => 'required',
+            'merk'   => 'required',
+            'tipe'   => 'required',
             'harga'  => 'required',
         ]);
         $camera->update($request->all());
