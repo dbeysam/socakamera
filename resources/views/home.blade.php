@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="card">
+{{-- <div class="card">
     <div class="card-header">Dashboard</div>
-</div>
+</div> --}}
 <div class="container">
     <div class="row justify-content-center">
         
