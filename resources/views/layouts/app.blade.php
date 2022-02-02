@@ -20,7 +20,7 @@
                     <a class="nav-link" href="{{url('/camera')}}">Data<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{url('/faculty')}}">Penjualan<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{url('/penjualan')}}">Penjualan<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
 

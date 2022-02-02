@@ -84,12 +84,12 @@ class CameraController extends Controller
     public function update(Request $request, camera $camera)
     {
         //fungsi update
-        $request -> validate([
-            'jenis'  => 'required',
-            'merk'   => 'required',
-            'tipe'   => 'required',
-            'harga'  => 'required',
-        ]);
+        // $request -> validate([
+        //     'jenis'  => 'required',
+        //     'merk'   => 'required',
+        //     'tipe'   => 'required',
+        //     'harga'  => 'required',
+        // ]);
         $camera->update($request->all());
         return redirect('camera');                    
     }

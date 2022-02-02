@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="col-md-8 offset-md-2">
-        <h3>Tambah Data</h3>
+        <h3>Tambah Mahasiswa</h3>
 
         @if($errors->any())
         <div class="alert alert-danger">
@@ -15,24 +15,26 @@
         </div><br> 
         @endif
     
-        <form method="POST" action="{{route('camera.update', $camera->id)}}">
+        <form method="POST" action="{{route('camera.store')}}">
         @csrf
-        @method("PUT")
         <div class="form-group">
             <label for="jenis"> Jenis </label>
-            <input type="text" class="form-control" name="jenis"value="{{$camera->jenis}}"/>
+            <input type="text" class="form-control" name="jenis"/>
         </div>
         <div class="form-group">
             <label for="merk"> Merk </label>
-            <input type="text" class="form-control" name="merk"value="{{$camera->merk}}"/>
+            <input type="text" class="form-control" name="merk"/>
         </div>
         <div class="form-group">
             <label for="Tipe"> Tipe </label>
-            <input type="text" class="form-control" name="tipe"value="{{$camera->tipe}}"/>
+            <input type="text" class="form-control" name="tipe"/>
         </div>
         <div class="form-group">
             <label for="harga"> Harga </label>
-            <input type="text" class="form-control" name="harga"value="{{$camera->harga}}"/>
+            <input type="text" class="form-control" name="harga"/>
+        </div>
+        
+        
         </div>
             <button type="submit" class="btn btn-primary">Simpan</button>
         </form>
