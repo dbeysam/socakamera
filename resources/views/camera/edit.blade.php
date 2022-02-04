@@ -1,5 +1,5 @@
-@extends('layouts.app')
-
+{{-- @extends('layouts.app') --}}
+@extends('template')
 @section('content')
 
     <div class="col-md-8 offset-md-2">
@@ -18,6 +18,10 @@
         <form method="POST" action="{{route('camera.update', $camera->id)}}">
         @csrf
         @method("PUT")
+        <div class="form-group">
+            <label for="id_camera"> ID Kamera </label>
+            <input type="text" class="form-control" name="id_camera"value="{{$camera->id_camera}}"/>
+        </div>
         <div class="form-group">
             <label for="jenis"> Jenis </label>
             <input type="text" class="form-control" name="jenis"value="{{$camera->jenis}}"/>

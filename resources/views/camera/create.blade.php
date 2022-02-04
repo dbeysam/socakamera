@@ -1,5 +1,5 @@
-@extends('layouts.app')
-
+{{-- @extends('layouts.app') --}}
+@extends('template')
 @section('content')
 
     <div class="col-md-8 offset-md-2">
@@ -18,6 +18,10 @@
         <form method="POST" action="{{route('camera.store')}}">
         @csrf
         <div class="form-group">
+            <label for="id_camera"> ID Kamera </label>
+            <input type="text" class="form-control" name="id_camera"/>
+        </div>
+        <div class="form-group">
             <label for="jenis"> Jenis </label>
             <input type="text" class="form-control" name="jenis"/>
         </div>
@@ -35,7 +39,7 @@
         </div>
         
         
-        </div>
+        
             <button type="submit" class="btn btn-primary">Simpan</button>
         </form>
     </div>

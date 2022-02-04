@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\camera;
 use Illuminate\Http\Request;
 
 class PenjualanController extends Controller
@@ -13,7 +14,9 @@ class PenjualanController extends Controller
      */
     public function index()
     {
-        return view('penjualan.index');
+        $cameras = camera::all();
+
+        return view('penjualan.index', compact('cameras'));
     }
 
     /**
@@ -21,9 +24,11 @@ class PenjualanController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        camera::index($request->all());
+        $cameras = camera::where('id', '$camera->id' );
+        return view('Penjualan.create', ['cameras' => $cameras]);
     }
 
     /**

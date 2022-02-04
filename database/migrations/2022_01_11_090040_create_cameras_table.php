@@ -15,6 +15,7 @@ class CreateCamerasTable extends Migration
     {
         Schema::create('cameras', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('id_camera');
             $table->string('jenis');
             $table->string('merk');
             $table->string('tipe');

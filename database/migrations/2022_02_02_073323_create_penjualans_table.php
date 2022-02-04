@@ -15,6 +15,10 @@ class CreatePenjualansTable extends Migration
     {
         Schema::create('penjualans', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('id_camera');
+            $table->string('customer');
+            $table->string('jumlah');
+            $table->string('total');
             $table->timestamps();
         });
     }

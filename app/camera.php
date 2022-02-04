@@ -9,5 +9,5 @@ class camera extends Model
     //
     //protected $table='cameras';
     //protected $primarykey='id';
-    protected $fillable = ['id','jenis','merk','tipe','harga'];
+    protected $fillable = ['id','id_camera','jenis','merk','tipe','harga'];
 }

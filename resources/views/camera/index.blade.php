@@ -1,6 +1,7 @@
-@extends("layouts.app")
-
+{{-- @extends("layouts.app") --}}
+@extends('template')
 @section("content")
+<br><br><br><br>
     <h1>Data Kamera</h1>
     <a href={{ route('camera.create') }} class="btn btn-success">Tambah Data</a>
     <div class="col-sm-12">
@@ -8,6 +9,7 @@
         <thead>
             <tr>
                 <th>No</th>
+                <th>ID Kamera</th>
                 <th>Jenis</th>
                 <th>Merk</th>
                 <th>Tipe</th>
@@ -20,6 +22,7 @@
                 <tr>
                     <td>{{ $loop->iteration }}</td>
                     {{-- <td>{{ $camera->id }}</td> --}}
+                    <td>{{ $camera->id_camera }}</td>
                     <td>{{ $camera->jenis }}</td>
                     {{-- <td>{{ $camera->jenis == "P" ? "Pria" : "Wanita"}}</td> --}}
                     <td>{{ $camera->merk }}</td>

@@ -1,5 +1,4 @@
-@extends('layouts.app')
-
+@extends('layouts.app');
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -62,6 +61,10 @@
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif
+
+                                {{-- <a class="btn btn-link" href="{{ route('password.register') }}">regis
+                                </a> --}}
+
                             </div>
                         </div>
                     </form>
