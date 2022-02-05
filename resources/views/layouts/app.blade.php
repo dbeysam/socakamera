@@ -6,7 +6,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <a class="navbar-brand" href="{{ url('/home') }}">
+            <a class="navbar-brand" href="{{ url('/dashboard') }}">
             <img src="{{ url('image/logo.png') }}" width="80">
             <strong>Soca Kamera</strong>
         </a>

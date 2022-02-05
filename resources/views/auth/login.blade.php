@@ -62,9 +62,6 @@
                                     </a>
                                 @endif
 
-                                {{-- <a class="btn btn-link" href="{{ route('password.register') }}">regis
-                                </a> --}}
-
                             </div>
                         </div>
                     </form>

@@ -12,13 +12,13 @@
       </a>
     </li>
     <li>
-      <a href="{{url('/penjualan')}}"">
+      <a href="{{url('/penjualan')}}">
         <i class="nc-icon nc-pin-3"></i>
         <p>Penjualan</p>
       </a>
     </li>
     <li>
-      <a href="./notifications.html">
+      <a href="{{url('/laporan')}}">
         <i class="nc-icon nc-bell-55"></i>
         <p>Laporan</p>
       </a>

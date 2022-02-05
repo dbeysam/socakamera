@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\camera;
+use App\Penjualan;
 use Illuminate\Http\Request;
 
 class PenjualanController extends Controller
@@ -15,8 +16,20 @@ class PenjualanController extends Controller
     public function index()
     {
         $cameras = camera::all();
-
+        // $total = array();
+        // foreach($cameras as $data)
+        // {
+        //     $Total = $data->harga*$data->jumlah;
+        //     array_push($total, $Total);
+        // }
+        // dump($total);
+        //return view('penjualan.index', compact('cameras', 'total'));
         return view('penjualan.index', compact('cameras'));
+    }
+
+    public function laporan(){
+        $penjualans = Penjualan::all();
+        return view('penjualan.laporan', compact('penjualans'));
     }
 
     /**
@@ -39,7 +52,8 @@ class PenjualanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Penjualan::create($request->all());
+        return redirect('penjualan');
     }
 
     /**

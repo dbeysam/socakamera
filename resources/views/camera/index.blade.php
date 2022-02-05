@@ -2,6 +2,8 @@
 @extends('template')
 @section("content")
 <br><br><br><br>
+
+
     <h1>Data Kamera</h1>
     <a href={{ route('camera.create') }} class="btn btn-success">Tambah Data</a>
     <div class="col-sm-12">
