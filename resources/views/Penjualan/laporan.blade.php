@@ -38,7 +38,7 @@
                     <td>{{ $penjualan->camera->harga }}</td>
                     <td>{{ $penjualan->jumlah }}</td>
                     <td>{{ $penjualan->total }}</td>
-                    <td>
+                    {{-- <td>
                         <a href="{{route('penjualan.edit', $penjualan->id)}}" class="btn btn-primary">Edit</a>
                     </td>
                     <td><form action="{{ route('penjualan.destroy', $penjualan->id) }}" method="post">
@@ -46,7 +46,7 @@
                         @method('DELETE')
                         <button class="btn btn-danger" type="submit">Delete</button>
                     </form>
-                    </td>
+                    </td> --}}
                 </tr>
             @endforeach
         </tbody>

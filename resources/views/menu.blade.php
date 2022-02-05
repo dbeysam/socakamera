@@ -7,19 +7,19 @@
     </li>
     <li>
       <a href="{{url('/camera')}}">
-        <i class="nc-icon nc-diamond"></i>
+        <i class="fa fa-folder-open"></i>
         <p>Data Kamera</p>
       </a>
     </li>
     <li>
       <a href="{{url('/penjualan')}}">
-        <i class="nc-icon nc-pin-3"></i>
+        <i class="fa fa-file"></i>
         <p>Penjualan</p>
       </a>
     </li>
     <li>
       <a href="{{url('/laporan')}}">
-        <i class="nc-icon nc-bell-55"></i>
+        <i class="fa fa-copy"></i>
         <p>Laporan</p>
       </a>
     </li>
